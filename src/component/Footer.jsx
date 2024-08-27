@@ -10,9 +10,10 @@ import {
   VisuallyHidden,
   chakra,
   useColorModeValue,
+  Image,
 } from '@chakra-ui/react';
 import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
-
+import logo from '../assets/logo.png'
 
 
 const ListHeader = ({ children }) => {
@@ -49,59 +50,63 @@ const SocialButton = ({ children, label, href }) => {
 export default function LargeWithAppLinksAndSocial() {
   return (
     <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}>
+      bg="radial-gradient(circle farthest-corner at center center, #0060ff 0%, #131E3C 100%)"
+      color={useColorModeValue('white')}>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
-            <Box as="a" href={'#'}>
+            <ListHeader>Our Pages</ListHeader>
+            <Box as="a" href={'/'}>
+              Home
+            </Box>
+            <Box as="a" href={'/about'}>
               About Us
             </Box>
             <Box as="a" href={'#'}>
-              Blog
+              Request for Quote
             </Box>
-            <Box as="a" href={'#'}>
-              Careers
+            <Box as="a" href={'/career'}>
+              Career
             </Box>
-            <Box as="a" href={'#'}>
+            <Box as="a" href={'/contact'}>
               Contact Us
             </Box>
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader>Support</ListHeader>
-            <Box as="a" href={'#'}>
-              Help Center
+            <ListHeader>Services</ListHeader>
+            <Box as="a" href={'/web-development'}>
+              Web Development
             </Box>
-            <Box as="a" href={'#'}>
-              Safety Center
+            <Box as="a" href={'/app-development'}>
+              Software Development
             </Box>
-            <Box as="a" href={'#'}>
-              Community Guidelines
+            <Box as="a" href={'/digital-marketing'}>
+              Digital Marketing
+            </Box>
+            <Box as="a" href={'/seo'}>
+              Search Engine Optimaztion
+            </Box>
+            <Box as="a" href={'/app-development'}>
+              Mobile App Development
             </Box>
           </Stack>
 
           <Stack align={'flex-start'}>
             <ListHeader>Legal</ListHeader>
-            <Box as="a" href={'#'}>
-              Cookies Policy
-            </Box>
-            <Box as="a" href={'#'}>
+           
+            <Box as="a" href={'/privacy'}>
               Privacy Policy
             </Box>
-            <Box as="a" href={'#'}>
+            <Box as="a" href={'/terms-condition'}>
               Terms of Service
             </Box>
-            <Box as="a" href={'#'}>
-              Law Enforcement
-            </Box>
+            
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader>Install App</ListHeader>
-             AppStore
-             PlayStore
+            <Image src={logo}  alt='Swapra-logo' width='200px' />
+            <Text>A Leading Website Development & Digital Marketing Company Providing one stop solution for all your business needs !!</Text> 
           </Stack>
         </SimpleGrid>
       </Container>
@@ -118,7 +123,7 @@ export default function LargeWithAppLinksAndSocial() {
           spacing={4}
           justify={{ md: 'space-between' }}
           align={{ md: 'center' }}>
-          <Text>© 2022 Chakra Templates. All rights reserved</Text>
+          <Text>© Website Design-Development and Maintenance by Swapra Technologies</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} href={'#'}>
               <FaTwitter />

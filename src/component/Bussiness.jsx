@@ -14,7 +14,7 @@ const Bussiness = () => {
       <Box className="auto-container" maxW="1200px" mx="auto">
         <Flex className="row" align="center" justify="space-between" flexWrap="wrap">
           {/* Heading Column */}
-          <Box className="heading-column" flex="1" pr={{ lg: 8 }} mb={{ base: 4, lg: 0 }}>
+          <Box className="heading-column" flex="1" pr={{ lg: 8 }} mb={{ base: 4, lg: 0 }} marginLeft={'20px'}>
             <Heading as="h2" size="lg" color="white">
               Preparing For Your Business <br /> Success With Swapra Technologies
             </Heading>

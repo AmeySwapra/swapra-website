@@ -65,10 +65,10 @@ const Navbar = () => {
                 Services
               </MenuButton>
               <MenuList onMouseEnter={onHoverOpen} onMouseLeave={onHoverClose}>
-                <MenuItem as="a" href="#web-development">Web Development</MenuItem>
-                <MenuItem as="a" href="#app-development">App Development</MenuItem>
-                <MenuItem as="a" href="#seo">SEO Services</MenuItem>
-                <MenuItem as="a" href="#marketing">Digital Marketing</MenuItem>
+                <MenuItem as="a" href="/web-development">Web Development</MenuItem>
+                <MenuItem as="a" href="/app-development">App Development</MenuItem>
+                <MenuItem as="a" href="/seo">SEO Services</MenuItem>
+                <MenuItem as="a" href="/digital-marketing">Digital Marketing</MenuItem>
               </MenuList>
             </Menu>
             <NavLink href="/career">Careers</NavLink>
@@ -96,10 +96,10 @@ const Navbar = () => {
                 Services
               </MenuButton>
               <MenuList>
-                <MenuItem as="a" href="#web-development">Web Development</MenuItem>
-                <MenuItem as="a" href="#app-development">App Development</MenuItem>
-                <MenuItem as="a" href="#seo">SEO Services</MenuItem>
-                <MenuItem as="a" href="#marketing">Digital Marketing</MenuItem>
+                <MenuItem as="a" href="/web-development">Web Development</MenuItem>
+                <MenuItem as="a" href="/app-development">App Development</MenuItem>
+                <MenuItem as="a" href="/seo">SEO Services</MenuItem>
+                <MenuItem as="a" href="/digital-marketing">Digital Marketing</MenuItem>
               </MenuList>
             </Menu>
             <NavLink href="/contact">Contact</NavLink>
